@@ -16,11 +16,11 @@
 <body>
   <header class="mx-auto fixed top-0 left-0 right-0 z-50 backdrop-blur">
     <nav>
-      <div class="h-16 container flex justify-between items-center">
+      <div class="px-5 lg:px-0 h-16 container flex justify-between items-center">
         <div class="align-middle">
           <img class="w-20" src="./assets/logo.png" alt="Logo">
         </div>
-        <ul class="flex justify-around items-center gap-20 text-lg font-semibold text-white">
+        <ul class="hidden lg:flex justify-around items-center gap-20 text-lg font-semibold text-white">
           <li><a href="#partners">Partners</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -31,29 +31,35 @@
   <main class="mx-auto">
     <!-- Hero -->
     <section id="hero" class="relative  bg-grey -z-50">
-      <div class="pt-44 mx-auto relative max-w-[1650px]">
+      <div class="pt-20 lg:pt-44 mx-auto relative max-w-[1650px]">
         <div class="container px-10">
           <div class="grid grid-cols-1 lg:grid-cols-2">
             <div class="flex flex-col text-white">
               <p class="inline-block mb-4"><span class="px-3 py-1 text-xs font-normal bg-green rounded-sm">NEW</span>
-                <span class="ml-3 text-base font-normal underline">We just launch new feature:
+                <span class="ml-3 text-sm lg:text-base font-normal underline underline-offset-4">We just launch new
+                  feature:
                   crypto transfer</span>
               </p>
-              <h1 class="text-5xl leading-[1.2]">Easy & Simple Way To Transfer Your Money Without Any Hassle</h1>
-              <p class="inline-block my-4">Ezypay help you transfer your money in a second, and provide you a secure
+              <h1 class="text-4xl lg:text-5xl leading-[1.2]">Easy & Simple Way To Transfer Your Money Without Any Hassle
+              </h1>
+              <p class="inline-block text-sm lg:text-base my-4">Ezypay help you transfer your money in a second, and
+                provide you a secure
                 transfer, so you doesn’t need
                 any
                 frustations.</p>
               <div class="hover:cursor-pointer">
-                <button class="py-2 px-10 inline-block  bg-grey rounded-sm text-lg text-black font-semibold shadow-md">
+                <button
+                  class="py-2 px-10 inline-block  bg-grey rounded-sm text-base lg:text-lg text-black font-semibold shadow-md">
                   Download Now
                 </button>
               </div>
             </div>
             <div>
-              <div class="relative -top-20 max-w-2xl">
-                <img class="absolute top-0 right-0 h-[700px]" src="./assets/Hero-Home(App).png" alt="Mobile App">
-                <img class="absolute top-64 left-10 h-[300px]" src="./assets/Frame 1.png" alt="Mobile App">
+              <div class="relative lg:-top-20 max-w-2xl">
+                <img class="absolute top-0 right-0 h-[500px] lg:h-[700px]" src="./assets/Hero-Home(App).png"
+                  alt="Mobile App">
+                <img class="absolute top-48 lg:top-64 left-0 lg:left-10 h-[200px] lg:h-[300px]"
+                  src="./assets/Frame 1.png" alt="Mobile App">
               </div>
             </div>
           </div>
@@ -61,35 +67,38 @@
         <!-- <svg class="mx-auto absolute inset-0 w-full max-h-[900px] -z-10" viewBox="0 0 1728 953" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0H1728V953L134.303 888.089C59.2612 885.033 0 823.308 0 748.205V0Z" fill="#37468E" />
         </svg> -->
-        <img class="mx-auto absolute inset-0 object-fill w-full max-h-[700px] -z-10 "
+        <img class="mx-auto absolute inset-0 object-fill w-full h-[500px] lg:max-h-[700px] -z-10 "
           src="./assets/Hero-background.png">
       </div>
-      <div id="partners" class="container mt-72 grid place-items-center">
-        <div class="flex flex-col items-center justify-between gap-10 w-3/4">
-          <h2 class="text-4xl text-black font-bold w-8/12 text-center">Trusted by world class partners would you be our
+      <!-- Partners -->
+      <div id="partners" class="container mt-[33rem] lg:mt-72 px-5 lg:px-0 grid place-items-center">
+        <div class="flex flex-col items-center justify-between gap-10 lg:w-3/4">
+          <h2 class="text-3xl lg:text-4xl text-black font-bold lg:w-8/12 text-center">Trusted by world class partners
+            would you be our
             next partners?</h2>
-          <div class="flex gap-20">
-            <img class="w-40" src="./assets/heraklith.png" alt="Heraklith">
-            <img class="w-40" src="./assets/nikon.png" alt="Nikon">
-            <img class="w-56" src="./assets/headway.png" alt="Headway">
+          <div class="flex flex-wrap justify-center gap-5 lg:gap-20">
+            <img class="w-28 lg:w-40" src="./assets/heraklith.png" alt="Heraklith">
+            <img class="w-28 lg:w-40" src="./assets/nikon.png" alt="Nikon">
+            <img class="w-60 lg:w-40" src="./assets/headway.png" alt="Headway">
           </div>
-          <a href="#" class="mb-20 text-sm text-black font-medium underline cursor-pointer">Click to see our other
+          <a href="#" class="mb-20 text-sm text-black font-medium underline cursor-pointer underline-offset-2">Click to
+            see our other
             precious
             partners</a><span>&nbsp;</span>
         </div>
       </div>
     </section>
     <!-- Features 1 -->
-    <section id="features" class="pt-28 bg-white h-[603px] overflow-hidden scroll-mt-16">
-      <div class="container px-10">
-        <div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center text-black">
+    <section id="features" class="pt-28 bg-white lg:h-[603px] overflow-hidden scroll-mt-16">
+      <div class="container px-5 lg:px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 lg:justify-center lg:items-center text-black">
           <div class="flex justify-center">
-            <img class="w-72" src="./assets/Contact List.png" alt="">
+            <img class="w-64 lg:w-72" src="./assets/Contact List.png" alt="">
           </div>
-          <div class="flex flex-col gap-5">
+          <div class="mt-5 lg:mt-0 flex flex-col gap-3 lg:gap-5">
             <h2 class="text-base font-semibold">#1 OUR FEATURES</h2>
-            <h3 class="text-3xl font-bold w-2/3">Choose someone who deserve your money</h3>
-            <p class="text-sm font-normal w-3/4 opacity-60 whitespace-pre-line">
+            <h3 class="text-4xl lg:text-3xl font-bold lg:w-2/3">Choose someone who deserve your money</h3>
+            <p class="text-base lg:text-sm font-normal lg:w-3/4 opacity-60 whitespace-pre-line">
               Choose the people you want to be transferred. Your friends, family, or whoever you want! You can also
               transfer to multiple account at the sametime, amazing isn’t it?
 
@@ -99,36 +108,35 @@
       </div>
     </section>
     <!-- Features 2 -->
-    <section class="pt-28 bg-white h-[603px] overflow-hidden">
-      <div class="container px-10">
-        <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center items-center text-black">
-          <div class="flex flex-col gap-5 w-2/3">
+    <section class="pt-28 bg-white lg:h-[603px] overflow-hidden">
+      <div class="container px-5 lg:px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 lg:justify-items-center lg:items-center text-black">
+          <div class="mt-5 lg:mt-0 order-2 lg:order-none flex flex-col gap-3 lg:gap-5 lg:w-2/3">
             <h2 class="text-base font-semibold">#2 OUR FEATURES</h2>
-            <h3 class="text-3xl font-bold">Monthly Bill Or Top Up? Do All Of This In Just One App</h3>
-            <p class="text-sm font-normal opacity-60 whitespace-pre-line">
+            <h3 class="text-4xl lg:text-3xl font-bold">Monthly Bill Or Top Up? Do All Of This In Just One App</h3>
+            <p class="text-base lg:text-sm font-normal opacity-60 whitespace-pre-line">
               We already provide Ezypay with all features that you need.Dont need to download many app.
 
               With Ezypay you got all you need.</p>
           </div>
-          <div class="flex justify-center">
-            <img class="w-72" src="./assets/Money Transfer to Bank Account.png" alt="">
+          <div class="order-1 lg:order-none flex justify-center">
+            <img class="w-64 lg:w-72" src="./assets/Money Transfer to Bank Account.png" alt="">
           </div>
         </div>
       </div>
     </section>
     <!-- Features 3 -->
-    <section class="pt-28 bg-white h-[603px] overflow-hidden">
-      <div class="container px-10">
-        <div class="grid grid-cols-1 lg:grid-cols-2 justify-items-center items-center text-black">
+    <section class="pt-28 bg-white lg:h-[603px] overflow-hidden">
+      <div class="container px-5 lg:px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 lg:justify-items-center lg:items-center text-black">
           <div class="flex justify-center">
-            <img class="w-72" src="./assets/Money Transfer to Bank Account.png" alt="">
+            <img class="w-64 lg:w-72" src="./assets/Money Transfer to Bank Account.png" alt="">
           </div>
-          <div class="flex flex-col gap-5 justify-self-start">
+          <div class="mt-5 lg:mt-0 flex flex-col gap-3 lg:gap-5 lg:justify-self-start">
             <h2 class="text-base font-semibold">#3 OUR FEATURES</h2>
-            <h3 class="text-3xl font-bold w-2/3">Have Multiple Bank Account In One App</h3>
-            <p class="text-sm font-normal opacity-60 whitespace-pre-line w-3/4">
-              One application for all payment and bank transaction. You dont need to install multiple app for each bank
-              account you have.
+            <h3 class="text-4xl lg:text-3xl font-bold lg:w-2/3">Have Multiple Bank Account In One App</h3>
+            <p class="text-base lg:text-sm font-normal opacity-60 whitespace-pre-line lg:w-3/4">
+              One application for all payment and bank transaction. You dont need to install multiple app for each bank account you have.
 
               With Ezybank, your money transaction will be simple and hassle-free</p>
           </div>
@@ -137,22 +145,24 @@
     </section>
     <!-- CTA -->
     <section class="px-4 py-28">
-      <div class="mx-auto max-w-[1672px] bg-secondary h-[400px] rounded-3xl">
+      <div class="mx-auto max-w-[1672px] bg-secondary h-[300px] lg:h-[400px] rounded-3xl">
         <div class="container h-full grid grid-cols-1 place-items-center">
           <div class="text-center space-y-8">
-            <h2 class="text-3xl font-bold whitespace-pre-line">Dont waste your time.
+            <h2 class="text-xl lg:text-3xl font-bold whitespace-pre-line">Dont waste your time.
               Hurry, be smart and use <span class="text-primary">Ezypay</span></h2>
-            <p class="text-lg font-normal opacity-80 whitespace-pre-line">We can make your payment simple and easy.
+            <p class="text-xs lg:text-lg font-normal opacity-80 whitespace-pre-line">We can make your payment simple and
+              easy.
               Use it and see the truth yourself.</p>
-            <button class="py-2 px-10 text-xl text-white font-semibold  bg-primary rounded">Prove It Myself</button>
+            <button class="py-2 px-10 text-base lg:text-xl text-white font-semibold  bg-primary rounded">Prove It
+              Myself</button>
           </div>
         </div>
       </div>
     </section>
   </main>
   <footer class="py-28 bg-grey">
-    <div class="container px-16">
-      <div class="flex justify-evenly">
+    <div class="container px-5 lg:px-16">
+      <div class="flex flex-col gap-10 lg:flex-row justify-evenly">
         <div class="flex-1 flex flex-col gap-3">
           <img class="w-28 inline-block" src="./assets/Logo 2.png" alt="Logo">
           <p class="whitespace-pre-line">Simple way to transfer money
@@ -186,7 +196,7 @@
               fill="white" />
           </svg>
         </div>
-        <div class="flex-1 grid grid-cols-4 gap-7">
+        <div class="flex-1 grid grid-cols-2 lg:grid-cols-4 gap-7">
           <nav class="flex flex-col gap-5">
             <span class="font-semibold">Products</span>
             <ul class="flex flex-col gap-3">
