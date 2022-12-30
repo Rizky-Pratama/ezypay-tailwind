@@ -14,18 +14,30 @@
 </head>
 
 <body>
-  <header class="mx-auto fixed top-0 left-0 right-0 z-50 backdrop-blur">
+  <header class="mx-auto fixed top-0 left-0 right-0 z-50 bg-primary/20 backdrop-blur">
     <nav>
-      <div class="px-5 lg:px-0 h-16 container flex justify-between items-center">
+      <div class="px-5 lg:px-0 h-16 container flex justify-between items-center border-b border-b-white/10">
         <div class="align-middle">
-          <img class="w-20" src="./assets/logo.png" alt="Logo">
+          <a href="/"><img class="w-20" src="./assets/logo.png" alt="Logo"></a>
         </div>
         <ul class="hidden lg:flex justify-around items-center gap-20 text-lg font-semibold text-white">
           <li><a href="#partners">Partners</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <button id="hamburger-menu" class="p-1 static lg:hidden aspect-square rounded-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 24 24">
+            <path fill="white"
+              d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z" />
+          </svg>
+        </button>
       </div>
+      <ul id="dropdown" class="container dropdown sm:static lg:hidden">
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
   <main class="mx-auto">
@@ -136,7 +148,8 @@
             <h2 class="text-base font-semibold">#3 OUR FEATURES</h2>
             <h3 class="text-4xl lg:text-3xl font-bold lg:w-2/3">Have Multiple Bank Account In One App</h3>
             <p class="text-base lg:text-sm font-normal opacity-60 whitespace-pre-line lg:w-3/4">
-              One application for all payment and bank transaction. You dont need to install multiple app for each bank account you have.
+              One application for all payment and bank transaction. You dont need to install multiple app for each bank
+              account you have.
 
               With Ezybank, your money transaction will be simple and hassle-free</p>
           </div>
@@ -144,7 +157,7 @@
       </div>
     </section>
     <!-- CTA -->
-    <section class="px-4 py-28">
+    <section id="contact" class="px-4 py-28">
       <div class="mx-auto max-w-[1672px] bg-secondary h-[300px] lg:h-[400px] rounded-3xl">
         <div class="container h-full grid grid-cols-1 place-items-center">
           <div class="text-center space-y-8">
@@ -236,6 +249,24 @@
       </div>
     </div>
   </footer>
+  <script>
+
+    const menu = document.getElementById("hamburger-menu");
+    const dropdown = document.getElementById("dropdown");
+
+    menu.addEventListener("click", () => {
+      menu.classList.toggle("open");
+      dropdown.classList.toggle("open");
+    })
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 1024) {
+        if (dropdown.classList.contains("open")) {
+          dropdown.classList.remove("open")
+        }
+      }
+    })
+  </script>
 </body>
 
 </html>

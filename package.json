@@ -1,5 +1,22 @@
 {
+  "name": "ezypay-fintech",
+  "version": "1.0.0",
+  "description": "Easy & Simple Way To Transfer Your Money Without Any Hassle",
+  "main": "index.html",
   "devDependencies": {
     "tailwindcss": "^3.2.4"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rizky-Pratama/ezypay-tailwind.git"
+  },
+  "author": "Muhammad Rizky Pratama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rizky-Pratama/ezypay-tailwind/issues"
+  },
+  "homepage": "https://github.com/Rizky-Pratama/ezypay-tailwind#readme"
 }

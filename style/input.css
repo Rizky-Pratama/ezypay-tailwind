@@ -3,11 +3,28 @@
 @tailwind utilities;
 
 @layer base {
-  html{
+  html {
     font-family: "Plus Jakarta Sans";
     @apply scroll-smooth
   }
-  h1,h2,h3,h4 {
+
+  h1,
+  h2,
+  h3,
+  h4 {
     @apply font-bold
+  }
+}
+
+@layer components {
+  button.open {
+    @apply bg-white/10 border-b border-b-white/20 ring ring-white/30;
+  }
+
+  .dropdown {
+    @apply h-0 px-5 overflow-hidden text-white transition-all;
+  }
+  .dropdown.open{
+    @apply h-auto py-2 flex flex-col gap-2 border-b border-b-white/20;
   }
 }
